@@ -65,8 +65,10 @@
     });
 
     $('.service_request_btn').click(function(){
-        $('#popup_area').load('../includes/sub5_1.html');
-        $('html, body').addClass('hidden');
+        $('#popup_area').load('../includes/sub5_1.html', function(){
+            $('#service_inquiry_main1').addClass('on')
+            $('html, body').addClass('hidden');
+        });
     })
 
 </script>

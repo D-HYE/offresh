@@ -24,10 +24,5 @@ $(document).ready(function() {
         $('html, body').removeClass('hidden');
     });
 
-    $('.service_request_btn').click(function(){
-        $('#popup_area').load('../includes/sub5_1.html');
-        $('html, body').addClass('hidden');
-    })
-
     
 });

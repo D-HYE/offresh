@@ -20,9 +20,6 @@
         $(document).ready(function() {
             $('#header_area').load('./includes/header_idx.html');
             $('#footer_area').load('./includes/footer_idx.html');
-            $('#service_request_btn2_2').on('click', function(){
-                $('#popup_area').load('./includes/sub5_2_idx.html');
-            });
         });
     </script>
 </head>
@@ -497,15 +494,6 @@
                             },
                         },
                     });
-
-                    $('.product_info_btn1').on('click', function(){
-                        $('#popup_area').load('./includes/sub5_3_1_idx.html');
-                        $('html, body').addClass('hidden');
-                    });
-                    $('.product_info_btn2').on('click', function(){
-                        $('#popup_area').load('./includes/sub5_3_2_idx.html');
-                        $('html, body').addClass('hidden');
-                    });
                 </script>
                 <section class="sect3">
                     <div class="section_inner">
@@ -918,15 +906,6 @@
                         },
 
                     });
-                    $('.product_info_btn3').on('click', function(){
-                        
-                        $('#popup_area').load('./includes/sub5_3_3_idx.html');
-                        $('html, body').addClass('hidden')
-                    });
-                    $('.product_info_btn4').on('click', function(){
-                        $('#popup_area').load('./includes/sub5_3_4_idx.html');
-                        $('html, body').addClass('hidden');
-                    });
                     
                 </script>
                 <section class="sect4">
@@ -999,8 +978,7 @@
                                         <p>
                                             더 궁금한 게 있으면 저희에게 문의해 주세요!
                                         </p>
-                                        <button class="btn service_request_btn2" type="button">문의하기</button>
-                                       
+                                        <button class="btn" type="button" id="service_request_btn3">문의하기</button>
                                     </div>
                                 </div>
                             </div>
@@ -1013,6 +991,15 @@
     </div>
 
     <div id="popup_area"></div>
+    <script>
+        $('#service_request_btn3').on('click', function(){
+            $('#popup_area').load('./includes/sub5_1_idx.html', function(){
+                $('.popup').removeClass('on')
+                $('#service_inquiry1').addClass('on')
+                $('html, body').addClass('hidden');
+            });
+        });
+    </script>
 
     <script>
         AOS.init();

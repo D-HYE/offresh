@@ -392,7 +392,7 @@
                         let winST = $(this).scrollTop();
                         let sectST2 = $('.sect2').offset().top;
                         let sectST3 = $('.sect3').offset().top;
-                        if(winST >= sectST2 - 80 && winST < sectST3 - 972){
+                        if(winST >= sectST2 - 80 && winST < sectST3 - 822){
                             $('.sect2').addClass('on');
                         }else{
                             $('.sect2').removeClass('on');
@@ -461,7 +461,7 @@
                                         <p class="mobile">
                                             고객의 공간 사이즈, 문화, 인테리어에 맞는<br/>하우징, 쇼케이스, 자판기형 제품들을 판매하고 있습니다.
                                         </p>
-                                        <button class="btn service_request_btn" type="button">문의하기</button>
+                                        <button class="btn" id="service_request_btn3" type="button">문의하기</button>
                                     </div>
                                     <div class="img_box">
                                         <img src="../images/sub2/sub2_2_visual_img2.png" alt="스토 판매 및 렌탈 프로그램">
@@ -471,6 +471,15 @@
                         </div>
                     </div>
                 </section>
+                <script>
+                    $('#service_request_btn3').on('click', function(){
+                        $('#popup_area').load('../includes/sub5_1.html', function(){
+                            $('.popup').removeClass('on')
+                            $('#service_inquiry1').addClass('on')
+                            $('html, body').addClass('hidden');
+                        });
+                    });
+                </script>
             </div>
         </main>
         <div id="footer_area"></div>

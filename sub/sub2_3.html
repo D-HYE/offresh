@@ -193,13 +193,22 @@
                                         <p>
                                             더 궁금한 게 있으면 저희에게 문의해 주세요!
                                         </p>
-                                        <button class="btn service_request_btn" type="button">문의하기</button>
+                                        <button class="btn" id="service_request_btn3" type="button">문의하기</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
+                <script>
+                    $('#service_request_btn3').on('click', function(){
+                        $('#popup_area').load('../includes/sub5_1.html', function(){
+                            $('.popup').removeClass('on')
+                            $('#service_inquiry1').addClass('on')
+                            $('html, body').addClass('hidden');
+                        });
+                    });
+                </script>
             </div>
         </main>
         <div id="footer_area"></div>

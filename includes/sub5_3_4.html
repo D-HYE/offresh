@@ -48,9 +48,9 @@
                     </div>
                     <div class="popup_content popup_content2">
                         <h5 class="popup_content_desc">
-                            <i>간식예산</i>
+                            <!-- <i>간식예산</i> -->
                             <b>
-                                월 <span>150만원</span> 이상 주문 시, <span>렌탈비 무료</span>
+                                월 <span>매출범위</span>에 따라, <span>렌탈비 무료</span>
                             </b>
                         </h5>
                     </div>
@@ -85,9 +85,18 @@
                     <h5 class="popup_btm_desc">렌탈 서비스에 대해 궁금한게 있으시면 문의해주세요!</h5>
                     <div class="popup_btn">
                         <input type="button" class="btn" value="1:1 문의하기">
-                        <input type="button" class="btn btn_wh service_request_btn" value="견적/상담 요청">
+                        <input type="button" class="btn btn_wh" id="service_request_btn5" value="견적/상담 요청">
                     </div>
                 </div>
+                <script>
+                    $('#service_request_btn5').on('click', function(){
+                        $('#popup_area').load('../includes/sub5_1.html', function(){
+                            $('#service_inquiry_main2').addClass('on')
+                            $('#inquiry_case_btn5').addClass('on')
+                            $('html, body').addClass('hidden');
+                        });
+                    });
+                </script>
             </div>
         </div>
     </div>
