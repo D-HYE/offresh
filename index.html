@@ -356,7 +356,7 @@
                                                                 </a>
                                                             </div>
                                                         </li>
-                                                        <li>
+                                                        <!-- <li>
                                                             <div class="img_box">
                                                                 <img src="./images/product_item/item11.png" alt="냉장고">
                                                             </div>
@@ -377,7 +377,7 @@
                                                                     더 알아보기
                                                                 </a>
                                                             </div>
-                                                        </li>
+                                                        </li> -->
                                                     </ul>
                                                 </div>
                                             </div>
@@ -396,13 +396,14 @@
                       on: {
                         slideChangeTransitionEnd : function(){
                             let idx = this.activeIndex;
-                            if(idx == 3){
-                                $('.sect2').addClass('height_change');
-                                swiper1.slideTo(idx, 700);
-                            }else{
-                                $('.sect2').removeClass('height_change');
-                                swiper1.slideTo(idx, 700);
-                            } 
+                            swiper1.slideTo(idx, 700);
+                            // if(idx == 3){
+                            //     $('.sect2').addClass('height_change');
+                            //     swiper1.slideTo(idx, 700);
+                            // }else{
+                            //     $('.sect2').removeClass('height_change');
+                            //     swiper1.slideTo(idx, 700);
+                            // } 
                             $('.sect2 .tab_list li').removeClass('active');
                             $('.sect2 .tab_list li').eq(idx).addClass('active');
                
@@ -426,13 +427,14 @@
                         $(this).closest('.tab_list').find('li').removeClass('active');
                         $(this).addClass('active');
                         let idx = $(this).index();
-                        if(idx == 3){
-                            $('.sect2').addClass('height_change');
-                            swiper1.slideTo(idx, 700);
-                        }else{
-                            $('.sect2').removeClass('height_change');
-                            swiper1.slideTo(idx, 700);
-                        }                      
+                        swiper1.slideTo(idx, 700);
+                        // if(idx == 3){
+                        //     $('.sect2').addClass('height_change');
+                        //     swiper1.slideTo(idx, 700);
+                        // }else{
+                        //     $('.sect2').removeClass('height_change');
+                        //     swiper1.slideTo(idx, 700);
+                        // }                      
                     })
                             
                     var swiper1_1 = new Swiper(".sect2_cont_slide1", {
