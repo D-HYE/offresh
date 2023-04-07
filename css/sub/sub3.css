@@ -317,7 +317,7 @@
   background-image: url("../../images/sub34/sub3_img2_6.png");
 }
 #sub3_2.sub3_2_3 .sect1 .content {
-  background-image: url("../../images/sub34/sub3_visual_img2.png");
+  background-image: url("../../images/sub34/sub3_visual_img3.png");
 }
 #sub3_2.sub3_2_3 .sect2 .img_box1 {
   background-image: url("../../images/sub34/sub3_img3_2.png");
@@ -547,5 +547,11 @@
   #sub3_2 .sect2 .content3 .desc_img .img_box {
     width: 100%;
     height: 273px;
+  }
+  #sub3_2.sub3_2_2 .sect1 .content {
+    background-image: url("../../images/sub34/sub3_visual_mo_img2.png");
+  }
+  #sub3_2.sub3_2_3 .sect1 .content {
+    background-image: url("../../images/sub34/sub3_visual_mo_img3.png");
   }
 }

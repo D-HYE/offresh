@@ -394,7 +394,7 @@
     }
     &.sub3_2_3{
         .sect1 .content{
-            background-image: url('../../images/sub34/sub3_visual_img2.png');
+            background-image: url('../../images/sub34/sub3_visual_img3.png');
         }
         .sect2{
             .img_box1{
@@ -691,6 +691,17 @@
             //         }
             //     }
             // }
+        }
+
+        &.sub3_2_2{
+            .sect1 .content{
+                background-image: url('../../images/sub34/sub3_visual_mo_img2.png');
+            }
+        }
+        &.sub3_2_3{
+            .sect1 .content{
+                background-image: url('../../images/sub34/sub3_visual_mo_img3.png');
+            }
         }
     }
 }
