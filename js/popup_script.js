@@ -61,6 +61,11 @@ $('.inquiry_btn_wrap.multiple_choice li').click(function(){
 });
 
 // ------ 서비스 문의, 메인 창
+$('#service_inquiry1, #service_inquiry_main2').find('.prev_btn').on('click', function(){
+    $('.inquiry_popup').removeClass('on');
+    $('#service_inquiry_main1').addClass('on');
+});
+
 $('#inquiry_case_btn1').on('click', function () {
     $('.inquiry_popup').removeClass('on');
     $('#service_inquiry1').addClass('on');
