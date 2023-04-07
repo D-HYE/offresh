@@ -208,8 +208,9 @@
                             display: flex;
                             gap: 12px;
                             margin-bottom: 6px;
-                            font-size: 20px;
+                            font-size: 19px;
                             line-height: 1.45;
+                            letter-spacing: -0.02em;
                             &:last-child{
                                 margin-bottom: 0;
                             }
