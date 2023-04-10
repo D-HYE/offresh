@@ -887,6 +887,9 @@
     .service_inquiry_content{
         .popup_summary{
             ul{
+                li.summary_list2{
+                    width: 100%;
+                }
                 li.summary_list4{
                     width: 61%;
                 }
@@ -947,11 +950,6 @@
     }
 }
 #service_inquiry2_3_2 .service_inquiry_content{
-    .popup_summary ul{
-        li.summary_list2{
-            width: 61%;
-        }
-    }
     .popup_alert{
         margin-top: 40px;
         text-align: center;
@@ -973,6 +971,23 @@
     }
 }
 #service_inquiry2_4{
+    .popup_period > div ol{
+        flex-wrap: wrap;
+        max-width: 550px;
+        li{
+            margin-bottom: 12px;
+            &:nth-child(3){
+                border: none;
+            }
+            &:nth-child(4){
+                margin-bottom: 0;
+                padding-left: 0;
+            }
+            &:nth-child(5){
+                margin-bottom: 0;
+            }
+        }
+    }
     .service_inquiry_content2{
         padding: 80px 0 100px;
         h4{
@@ -1785,9 +1800,12 @@
         }
         .service_inquiry_content{
             .popup_summary ul li{
+                &.summary_list3,
                 &.summary_list4,
+                &.summary_list5,
                 &.summary_list6{
                     width: 50%;
+                    padding-right: 1%;
                 }
             }
             &.service_inquiry_content2{
@@ -1827,13 +1845,7 @@
             }
         }
     }
-    #service_inquiry2_3_1 .service_inquiry_content .popup_summary ul li.summary_list2{
-        width: 100%;
-    }
     #service_inquiry2_3_2 .service_inquiry_content{
-        .popup_summary ul li.summary_list2{
-            width: 50%;
-        }
         .popup_alert{
             margin-top: 20px;
             h6{
@@ -1853,6 +1865,20 @@
     } 
     #service_inquiry2_4 .popup_content_area {
         padding-top: 20px;
+
+        .popup_period > div ol{
+            max-width: 480px;
+            li{
+                margin-bottom: 0px;
+                &:nth-child(3){
+                    border-right: 1px solid rgb(217, 217, 217);
+                }
+                &:nth-child(4){
+                    padding-left: 13px;
+                }
+            }
+        }
+
         .service_inquiry_content2{
             padding: 40px 0 60px;
 
@@ -2118,6 +2144,26 @@
             padding-bottom: 100px;
         }
     }
+
+    #service_inquiry2_4 .popup_content_area {
+        .popup_period > div ol{
+            max-width: 288px;
+            justify-content: center;
+            li{
+                margin-bottom: 7px;
+                &:nth-child(3){
+                    border-right: none;
+                }
+                &:nth-child(4){
+                    margin-bottom: 0;
+                }
+                &:nth-child(5){
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
     #service_inquiry4_2_1,
     #service_inquiry4_2_2{
         .popup_content_area{

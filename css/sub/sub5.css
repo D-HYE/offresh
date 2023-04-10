@@ -797,6 +797,10 @@
   margin-top: 40px;
 }
 
+#service_inquiry2_3_1 .service_inquiry_content .popup_summary ul li.summary_list2,
+#service_inquiry2_3_2 .service_inquiry_content .popup_summary ul li.summary_list2 {
+  width: 100%;
+}
 #service_inquiry2_3_1 .service_inquiry_content .popup_summary ul li.summary_list4,
 #service_inquiry2_3_2 .service_inquiry_content .popup_summary ul li.summary_list4 {
   width: 61%;
@@ -863,9 +867,6 @@
   padding-bottom: 100px;
 }
 
-#service_inquiry2_3_2 .service_inquiry_content .popup_summary ul li.summary_list2 {
-  width: 61%;
-}
 #service_inquiry2_3_2 .service_inquiry_content .popup_alert {
   margin-top: 40px;
   text-align: center;
@@ -886,6 +887,23 @@
   line-height: 22px;
 }
 
+#service_inquiry2_4 .popup_period > div ol {
+  flex-wrap: wrap;
+  max-width: 550px;
+}
+#service_inquiry2_4 .popup_period > div ol li {
+  margin-bottom: 12px;
+}
+#service_inquiry2_4 .popup_period > div ol li:nth-child(3) {
+  border: none;
+}
+#service_inquiry2_4 .popup_period > div ol li:nth-child(4) {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+#service_inquiry2_4 .popup_period > div ol li:nth-child(5) {
+  margin-bottom: 0;
+}
 #service_inquiry2_4 .service_inquiry_content2 {
   padding: 80px 0 100px;
 }
@@ -1615,10 +1633,13 @@
   #service_inquiry2_3_2 .popup_content_area {
     padding: 0 0 40px;
   }
-  #service_inquiry2_3_1 .service_inquiry_content .popup_summary ul li.summary_list4, #service_inquiry2_3_1 .service_inquiry_content .popup_summary ul li.summary_list6,
+  #service_inquiry2_3_1 .service_inquiry_content .popup_summary ul li.summary_list3, #service_inquiry2_3_1 .service_inquiry_content .popup_summary ul li.summary_list4, #service_inquiry2_3_1 .service_inquiry_content .popup_summary ul li.summary_list5, #service_inquiry2_3_1 .service_inquiry_content .popup_summary ul li.summary_list6,
+  #service_inquiry2_3_2 .service_inquiry_content .popup_summary ul li.summary_list3,
   #service_inquiry2_3_2 .service_inquiry_content .popup_summary ul li.summary_list4,
+  #service_inquiry2_3_2 .service_inquiry_content .popup_summary ul li.summary_list5,
   #service_inquiry2_3_2 .service_inquiry_content .popup_summary ul li.summary_list6 {
     width: 50%;
+    padding-right: 1%;
   }
   #service_inquiry2_3_1 .service_inquiry_content.service_inquiry_content2,
   #service_inquiry2_3_2 .service_inquiry_content.service_inquiry_content2 {
@@ -1664,12 +1685,6 @@
   #service_inquiry2_3_2 .service_inquiry_content .inquiry_question .radio_list_wrap li.radio_list .txt_box {
     width: 94.839%;
   }
-  #service_inquiry2_3_1 .service_inquiry_content .popup_summary ul li.summary_list2 {
-    width: 100%;
-  }
-  #service_inquiry2_3_2 .service_inquiry_content .popup_summary ul li.summary_list2 {
-    width: 50%;
-  }
   #service_inquiry2_3_2 .service_inquiry_content .popup_alert {
     margin-top: 20px;
   }
@@ -1688,6 +1703,18 @@
   }
   #service_inquiry2_4 .popup_content_area {
     padding-top: 20px;
+  }
+  #service_inquiry2_4 .popup_content_area .popup_period > div ol {
+    max-width: 480px;
+  }
+  #service_inquiry2_4 .popup_content_area .popup_period > div ol li {
+    margin-bottom: 0px;
+  }
+  #service_inquiry2_4 .popup_content_area .popup_period > div ol li:nth-child(3) {
+    border-right: 1px solid rgb(217, 217, 217);
+  }
+  #service_inquiry2_4 .popup_content_area .popup_period > div ol li:nth-child(4) {
+    padding-left: 13px;
   }
   #service_inquiry2_4 .popup_content_area .service_inquiry_content2 {
     padding: 40px 0 60px;
@@ -1928,6 +1955,22 @@
   #service_inquiry2_3_1 .popup_content_area,
   #service_inquiry2_3_2 .popup_content_area {
     padding-bottom: 100px;
+  }
+  #service_inquiry2_4 .popup_content_area .popup_period > div ol {
+    max-width: 288px;
+    justify-content: center;
+  }
+  #service_inquiry2_4 .popup_content_area .popup_period > div ol li {
+    margin-bottom: 7px;
+  }
+  #service_inquiry2_4 .popup_content_area .popup_period > div ol li:nth-child(3) {
+    border-right: none;
+  }
+  #service_inquiry2_4 .popup_content_area .popup_period > div ol li:nth-child(4) {
+    margin-bottom: 0;
+  }
+  #service_inquiry2_4 .popup_content_area .popup_period > div ol li:nth-child(5) {
+    margin-bottom: 0;
   }
   #service_inquiry4_2_1 .popup_content_area,
   #service_inquiry4_2_2 .popup_content_area {
