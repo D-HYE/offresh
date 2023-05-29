@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+
+    <title>워커스하이</title>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/sub/sub3.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <div class="channelTalk_btn">
+        <div class="icon_box"></div>
+    </div>
+    <div class="wrap">
+        <div id="header_area"></div>
+
+        <main id="sub3_2" class="sub3_2_1">
+            <div class="container">
+                <section class="sect1">
+                    <div class="section_inner">
+                        <div class="content">
+                            <div class="content_inner">
+                                <div class="cont_img">
+                                    <a href="./sub3_1.html" class="backspace_btn">
+                                        <i>목록으로</i>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="sect2">
+                    <div class="section_inner">
+                        <div class="content content1">
+                            <div class="content_inner">
+                                <div class="cont_title">
+                                    <h3>
+                                        L7홍대점<span>호텔</span>
+                                    </h3>
+                                    <div class="icon_btn_wrap">
+                                        <ul>
+                                            <li class="icon_btn link_copy_btn" id="link_copy_btn"></li>
+                                            <li class="icon_btn kakaotalk_btn"></li>
+                                            <li class="icon_btn map_btn"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <script>
+                                    function copyClip(url){
+                                        var $temp = $('<input>');
+                                        $('body').append($temp);
+                                        $temp.val(url).select();
+                                        document.execCommand('copy');
+                                        $temp.remove();
+                                        alert('URL이 복사되었습니다.');
+                                    }
+                                    $('#link_copy_btn').on('click', function(e){
+                                        e.preventDefault();
+                                        var link = location.href;
+                                        copyClip(link);
+                                    });
+                                </script>
+                                <div class="cont_summary">
+                                    <ul>
+                                        <li>
+                                            <b>서비스 타입</b>
+                                            <span>음료,간식, 어메니티, 조식 밀박스 </span>
+                                        </li>
+                                        
+                                        <li>
+                                            <b>매대 타입</b>
+                                            <span>하우징 / 2도어 - 비스포크형</span>
+                                        </li>
+                                        
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <b>추가 옵션</b>
+                                            <span>잠금장치(이엠락), 상단 커스텀 Signage, 
+                                                상품 트래킹</span>
+                                        </li>
+                                        <li>
+                                            <b>이용정책</b>
+                                            <span>이용자 100% 결제</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content content2">
+                            <div class="content_inner">
+                                <div class="cont_title">
+                                    <b>Point 1</b>
+                                    <h4>
+                                        공간에 맞는 감각적인, <span>비스포크 디자인</span>
+                                    </h4>
+                                </div>
+                                <div class="cont_desc">
+                                    <div class="desc_img">
+                                        <div class="img_box img_box1">
+                                        </div>
+                                        <div class="img_box_wrap">
+                                            <div class="img_box img_box2">
+                                            </div>
+                                            <div class="img_box img_box3">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="desc">
+                                        <p>
+                                            라이프스타일 호텔, L7호텔 로비에 설치된 맥시바입니다.<br/>
+                                            트렌디한 스토어와 힙한 상품들이 모여있는 이곳, 여행객들에게 필수 방문 코스가 되었습니다.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content content3">
+                            <div class="content_inner">
+                                <div class="cont_title">
+                                    <b>Point 2</b>
+                                    <h4>
+                                        취향을 반영한 프리미엄 상품
+                                    </h4>
+                                </div>
+                                <div class="cont_desc">
+                                    <div class="desc_img">
+                                        <div class="img_box img_box4">
+                                        </div>
+                                        <div class="img_box img_box5">
+                                        </div>
+                                    </div>
+                                    <div class="desc">
+                                        <p>
+                                            환경을 생각한 저탄소 제품, 트렌디한 상품들을 언제든지 만나볼 수 있는, ‘세상에서 가장 가까운 나만의 마켓’에서 당신의 취향을 만나보세요.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <div id="footer_area"></div>
+    </div>
+
+    <div id="popup_area"></div>
+</body>
+</html>

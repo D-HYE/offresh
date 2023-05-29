@@ -1,0 +1,84 @@
+<header>
+    <div class="header_inner">
+        <div class="logo_area">
+            <h1 class="logo">
+                <a href="./index.html" class="logo_img"></a>
+            </h1>
+        </div>
+        <div class="gnb_area">
+            <ol>
+                <li class="gnb_list gnb_list1">
+                    <a href="./sub/sub1.html">About us</a>
+                </li>
+                <li class="gnb_list gnb_list2">
+                    <a href="./sub/sub2.html">Offresh</a>
+                    <!-- <span>서비스 소개</span>
+                    <ul class="depth_list">
+                        <li>
+                            <a href="./sub/sub2_1.html">구독형 서비스</a>
+                        </li>
+                        <li>
+                            <a href="./sub/sub2_2.html">스토어형 서비스</a>
+                        </li>
+                        <li>
+                            <a href="./sub/sub2_3.html">물류 및 관리</a>
+                        </li>
+                    </ul> -->
+                </li>
+                <li class="gnb_list gnb_list3">
+                    <a href="./sub/sub3_1.html">도입 사례</a>
+                </li>
+                <li class="gnb_list gnb_list4">
+                    <a href="./sub/sub4.html">FAQ</a>
+                </li>
+            </ol>
+        </div>
+        <div class="service_area">
+            <span class="btn service_request_btn2">서비스 문의</span>
+        </div>
+        <div class="mobile_menu_btn mobile">
+            <button type="button" class="menu_btn"></button>
+        </div>
+    </div>
+</header>
+<div class="dim"></div>
+
+<script>
+    $('.gnb_list2').on('mouseenter', function(){
+        $(this).find('.depth_list').addClass('active');
+    });
+    $('.gnb_list2').on('mouseleave', function(){
+        $(this).find('.depth_list').removeClass('active');
+    });
+    $('.menu_btn').on('click', function(){
+        let gnb_route = $(this).closest('.header_inner').find('.gnb_area')
+        let has_open = gnb_route.hasClass('open');
+        if(has_open == false){
+            gnb_route.addClass('open');
+            $('#header_area').addClass('mainOn')
+            $('.wrap').on('scroll touchmove mousewheel', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                return false;
+            }); 
+
+        }else{
+            gnb_route.removeClass('open');
+            $('#header_area').removeClass('mainOn')  
+            $('.wrap').on('scroll touchmove mousewheel', function() {
+                $(this).unbind()
+            }); 
+
+        }
+    });
+    $(window).resize(function(){
+        $('.gnb_area').removeClass('open');
+    });
+
+    $('.service_request_btn2').click(function(){
+        $('#popup_area').load('./includes/sub5_1_idx.html', function(){
+            $('#service_inquiry_main1').addClass('on')
+            $('html, body').addClass('hidden');
+        });
+    })
+</script>

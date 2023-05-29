@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+
+    <title>워커스하이</title>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/sub/sub3.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <div class="channelTalk_btn">
+        <div class="icon_box"></div>
+    </div>
+    <div class="wrap">
+        <div id="header_area"></div>
+
+        <main id="sub3_2" class="sub3_2_2">
+            <div class="container">
+                <section class="sect1">
+                    <div class="section_inner">
+                        <div class="content">
+                            <div class="content_inner">
+                                <div class="cont_img">
+                                    <a href="./sub3_1.html" class="backspace_btn">
+                                        <i>목록으로</i>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="sect2">
+                    <div class="section_inner">
+                        <div class="content content1">
+                            <div class="content_inner">
+                                <div class="cont_title">
+                                    <h3>
+                                        KBS 미디어 상암<span>오피스</span>
+                                    </h3>
+                                    <div class="icon_btn_wrap">
+                                        <ul>
+                                            <li class="icon_btn link_copy_btn" id="link_copy_btn"></li>
+                                            <li class="icon_btn kakaotalk_btn"></li>
+                                            <li class="icon_btn map_btn"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <script>
+                                    function copyClip(url){
+                                        var $temp = $('<input>');
+                                        $('body').append($temp);
+                                        $temp.val(url).select();
+                                        document.execCommand('copy');
+                                        $temp.remove();
+                                        alert('URL이 복사되었습니다.');
+                                    }
+                                    $('#link_copy_btn').on('click', function(e){
+                                        e.preventDefault();
+                                        var link = location.href;
+                                        copyClip(link);
+                                    });
+                                </script>
+                                <div class="cont_summary">
+                                    <ul>
+                                        <li>
+                                            <b>서비스 타입</b>
+                                            <span>음료,간식 </span>
+                                        </li>
+                                        
+                                        <li>
+                                            <b>매대 타입</b>
+                                            <span>하우징 / 2도어 - 비스포크형</span>
+                                        </li>
+                                        
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <b>추가 옵션</b>
+                                            <span>잠금장치(이엠락), 상단 커스텀 Signage, AI 큐레이션 자동 발주 시스템</span>
+                                        </li>
+                                        <li>
+                                            <b>이용정책</b>
+                                            <span>이용자 무료 이용</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content content2">
+                            <div class="content_inner">
+                                <div class="cont_title">
+                                    <b>Point 1</b>
+                                    <h4>
+                                        유흥공간에 딱 맞는 <span>비스포크형 쇼케이스</span>
+                                    </h4>
+                                </div>
+                                <div class="cont_desc">
+                                    <div class="desc_img">
+                                        <div class="img_box img_box1">
+                                        </div>
+                                        <div class="img_box_wrap">
+                                            <div class="img_box img_box2">
+                                            </div>
+                                            <div class="img_box img_box3">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="desc">
+                                        <p>
+                                            임직원들의 요청에 맞게 다채롭게 구성되는 상품을 만나보세요. 업무의 질이 상승하는 워커스하이만의 프리미엄 서비스입니다.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content content3">
+                            <div class="content_inner">
+                                <div class="cont_title">
+                                    <b>Point 2</b>
+                                    <h4>
+                                        컨시어지 서비스가 떠오르는 <span>프리미엄 진열 서비스</span>
+                                    </h4>
+                                </div>
+                                <div class="cont_desc">
+                                    <div class="desc_img">
+                                        <div class="img_box img_box4">
+
+                                        </div>
+                                        <div class="img_box img_box5">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="desc">
+                                        <p>
+                                            채워주고 치워주는, 프리미엄 진열 서비스는 워커스하이 본사 직원이 매 방문시 서비스 만족도를 체크하고 1:1 매칭으로 관리합니다.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <div id="footer_area"></div>
+    </div>
+
+    <div id="popup_area"></div>
+</body>
+</html>
