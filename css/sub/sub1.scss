@@ -325,9 +325,8 @@
             }
         }
     }
-    .sect4{background: #F5F5F5;}
     .sect4 .section_inner{
-        background: #F5F5F5;
+        background: #F6FAFF;
         padding: 60px 0;
         .content{
             position: relative;
@@ -344,12 +343,12 @@
             
             .sect4_cont_slide{
                 max-width: 1240px;
-                height: 386px;
                 padding: 28px 0 30px;
             }
             .review-slide{
                 position: relative;
                 width: 380px;
+                height: 328px;
                 background: #FFFFFF;
                 border-radius: 30px;
 
@@ -684,39 +683,37 @@
                 .cont_title{
                     width: 97.5%;
                     padding: 0;
-                    margin: 0 auto 30px;
+                    margin: 0 auto;
                     font-size: 20px;
                     line-height: 29px;
                 }
+                .sect4_cont_slide{
+                    padding: 30px 0 35px; 
+                }
                 .review-slide{
-                    width: 100%;
                     height: 212px;
-                    margin-bottom: 16px;
-                    &:last-child{
-                        margin-bottom: 0;
-                    }
+                    border-radius: 20px;
+                    
                     .quote1{
-                        top: 24px;
                         width: 27px;
                         height: 20px;
+                        top: 24px;
                     }
                     .quote2{
-                        bottom: 24px;
                         width: 27px;
                         height: 20px;
+                        bottom: 24px;
                     }
                     .slide_desc{
-                        width: 100%;
-                        p{
-                            font-size: 14px;
-                            line-height: 19px;
-                        }
-                        b{
+                        width: 90%;
+                        p, b{
                             font-size: 14px;
                             line-height: 19px;
                         }
                     }
                 }
+                
+
             }
         }
     }

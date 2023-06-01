@@ -407,7 +407,7 @@
                                 <h5 class="cont_title">
                                     많은 분들이 워커스하이의 서비스에 만족하셨습니다.
                                 </h5>
-                                <div class="swiper sect4_cont_slide pc">
+                                <div class="swiper sect4_cont_slide">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide review-slide">
                                             <span class="quote1"></span>
@@ -455,65 +455,31 @@
                                 <div class="swiper-button-next swiper-button-next3 pc"></div>
                                 <div class="swiper-button-prev swiper-button-prev3 pc"></div>
 
-                                <div class="review-slide-wrap mobile">
-                                    <div class="review-slide">
-                                        <span class="quote1"></span>
-                                        <span class="quote2"></span>
-                                        <div class="slide_desc">
-                                            <p>
-                                                저희 사무실 환경에 딱 맞는<br/>예쁜 간식 매대가 들어와서<br/>사무실 분위기까지 바뀌었어요!
-                                            </p>
-                                            <b>A 고객사 담당자님</b>
-                                        </div>
-                                    </div>
-                                    <div class="review-slide">
-                                        <span class="quote1"></span>
-                                        <span class="quote2"></span>
-                                        <div class="slide_desc">
-                                            <p>
-                                                정성스럽게 진열해주셔서<br/>정돈된 느낌이 너무 좋아요!
-                                            </p>
-                                            <b>B 고객사 담당자님</b>
-                                        </div>
-                                    </div>
-                                    <div class="review-slide">
-                                        <span class="quote1"></span>
-                                        <span class="quote2"></span>
-                                        <div class="slide_desc">
-                                            <p>
-                                                필요할 땐 상품을 직접 선택해도 되고,<br/>고민스러울 땐 큐레이션을<br/>요청드려도 되서 너무 편리해요
-                                            </p>
-                                            <b>C 고객사 담당자님</b>
-                                        </div>
-                                    </div>
-                                    <div class="review-slide">
-                                        <span class="quote1"></span>
-                                        <span class="quote2"></span>
-                                        <div class="slide_desc">
-                                            <p>
-                                                사무실에서 출출할 때 멀리 나가지<br/>않아도 되고 쉽고 간편하게<br/>이용할 수 있어서 좋아요.
-                                            </p>
-                                            <b>D 고객사 담당자님</b>
-                                        </div>
-                                    </div>
-                                </div>
-
                                 
                             </div>
                         </div>
                     </div>
                 </section>
                 <script>
-                    var swiper15 = new Swiper(".sect4_cont_slide", {
-                        slidesPerView: 3,
-                        spaceBetween: 45,
+                    var swiper4 = new Swiper(".sect4_cont_slide", {
                         navigation: {
-                            nextEl: ".swiper-button-next3",
-                            prevEl: ".swiper-button-prev3",
-                        },
-                        pagination: {
-                            el: ".swiper-pagination",
-                        },
+                                nextEl: ".swiper-button-next3",
+                                prevEl: ".swiper-button-prev3",
+                            },
+                            pagination: {
+                                el: ".swiper-pagination",
+                            },
+
+                            breakpoints: {
+                                768: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 20,
+                                },
+                                1025: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 45,
+                                },
+                            },
                     });
                 </script>
             </div>
