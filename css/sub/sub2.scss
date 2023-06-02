@@ -932,7 +932,7 @@ header{
 
 #popup_ver4{
     .product_wrap_mo{
-        display: none;
+        display: none !important;
     }
     max-width: 1240px;
     .popup_top {
@@ -1743,10 +1743,10 @@ header{
 
     #popup_ver4{
         .product_wrap_pc{
-            display: none;
+            display: none !important;
         }
         .product_wrap_mo{
-            display: block;
+            display: block !important;
         }
         .popup_content_wrap {
             padding: 40px 0 50px;

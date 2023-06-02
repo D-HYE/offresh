@@ -824,7 +824,7 @@ header {
   max-width: 1240px;
 }
 #popup_ver4 .product_wrap_mo {
-  display: none;
+  display: none !important;
 }
 #popup_ver4 .popup_top .popup_title {
   font-family: "Poppins", sans-serif;
@@ -1519,10 +1519,10 @@ header {
     width: 100%;
   }
   #popup_ver4 .product_wrap_pc {
-    display: none;
+    display: none !important;
   }
   #popup_ver4 .product_wrap_mo {
-    display: block;
+    display: block !important;
   }
   #popup_ver4 .popup_content_wrap {
     padding: 40px 0 50px;
