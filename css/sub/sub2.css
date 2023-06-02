@@ -197,8 +197,8 @@ header {
   height: 0;
   margin: auto;
   background: #7d7d7d;
-  transition-delay: 0.3s;
-  transition: 0.5s;
+  transition-delay: 0.5s;
+  transition: 0.7s;
 }
 #sub2 .sect3 .main_title .line_effect_area .line_effect.on {
   height: 132px;

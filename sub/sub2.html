@@ -330,6 +330,7 @@
                     </section>
                 </div>
                 <script>
+                    $('.line_effect_area .line_effect').addClass('on');
                     $(window).on('scroll', function(){
                         let winST = $(this).scrollTop();
                         let tablistST = $('#page_tab').offset().top;
@@ -338,13 +339,14 @@
                         }else{
                             $('#page_tab').removeClass('on');
                         }
+                        
 
-                        let lineST = $('.sect3').offset().top;
-                        if(winST >= lineST - 300){
-                            $('.line_effect_area .line_effect').addClass('on');
-                        }else{
-                            $('.line_effect_area .line_effect').removeClass('on');
-                        }
+                        // let lineST = $('.sect3').offset().top;
+                        // if(winST >= lineST - 300){
+                        //     $('.line_effect_area .line_effect').addClass('on');
+                        // }else{
+                        //     $('.line_effect_area .line_effect').removeClass('on');
+                        // }
 
                         let sectST2 = $('.sect7').offset().top;
                         let sectST3 = $('.sect10').offset().top;
@@ -1182,6 +1184,9 @@
                                                 </div>
                                                 <div class="img_box">
                                                     <img src="../images/company-logo/logo-abib.svg" alt="Abib">
+                                                </div>
+                                                <div class="img_box">
+                                                    <img src="../images/company-logo/logo-sports.svg" alt="EA SPORTS">
                                                 </div>
                                                 
                                                 <div class="img_box">
