@@ -8,7 +8,7 @@ header {
   z-index: 50;
   width: 100%;
   height: 100px;
-  padding: 0 3.125%;
+  padding: 0 60px;
   background: #fff;
 }
 header .header_inner {
@@ -26,7 +26,15 @@ header .header_inner h1.logo a {
   height: 32px;
   background: url("../images/logo_bk.svg") no-repeat center/contain;
 }
+header .header_inner .gnb_area {
+  position: relative;
+  flex: 1;
+  height: 100%;
+}
 header .header_inner .gnb_area ol {
+  position: absolute;
+  top: 0;
+  right: 156px;
   display: flex;
   gap: 62px;
   font-size: 20px;
@@ -34,48 +42,6 @@ header .header_inner .gnb_area ol {
 }
 header .header_inner .gnb_area ol > li > a {
   line-height: 100px;
-}
-header .header_inner .gnb_area ol .gnb_list2 {
-  position: relative;
-}
-header .header_inner .gnb_area ol .gnb_list2 span {
-  display: inline-block;
-  padding-right: 22px;
-  line-height: 100px;
-  background: url("../images/icon/icon-dropdown.svg") no-repeat calc(100% - 3px) 50%/16px;
-  cursor: pointer;
-}
-header .header_inner .gnb_area ol .gnb_list2 .depth_list {
-  position: absolute;
-  top: 100px;
-  left: 50%;
-  z-index: 30;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  width: 218px;
-  padding: 0;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 20px;
-  backdrop-filter: blur(5px);
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
-  height: 0;
-  overflow: hidden;
-  opacity: 0;
-  transition: 0.2s;
-}
-header .header_inner .gnb_area ol .gnb_list2 .depth_list a {
-  line-height: 30px;
-}
-header .header_inner .gnb_area ol .gnb_list2 .depth_list li:hover a {
-  color: #4267EB;
-}
-header .header_inner .gnb_area ol .gnb_list2 .depth_list.active {
-  height: auto;
-  padding: 30px;
-  opacity: 1;
 }
 header .header_inner .service_area .btn {
   width: 126px;
@@ -875,6 +841,9 @@ input[type=text]:focus {
     height: 22px;
     background-image: url("../images/logo_mo_bk.svg");
   }
+  header .header_inner .gnb_area {
+    position: initial;
+  }
   header .header_inner .gnb_area ol {
     position: fixed;
     top: 56px;
@@ -892,27 +861,6 @@ input[type=text]:focus {
   }
   header .header_inner .gnb_area ol > li > a {
     line-height: 23px;
-  }
-  header .header_inner .gnb_area ol .gnb_list2 span {
-    line-height: 23px;
-  }
-  header .header_inner .gnb_area ol .gnb_list2 .depth_list {
-    position: initial;
-    top: auto;
-    left: auto;
-    transform: translateX(0);
-    gap: 16px;
-    width: 100%;
-    background: none;
-    box-shadow: none;
-  }
-  header .header_inner .gnb_area ol .gnb_list2 .depth_list a {
-    font-size: 14px;
-    line-height: 20px;
-    color: #555;
-  }
-  header .header_inner .gnb_area ol .gnb_list2 .depth_list.active {
-    padding: 16px;
   }
   header .header_inner .gnb_area.open ol {
     height: calc(100vh - 56px);
